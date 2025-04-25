@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "zipline",
+	"version": "1.0.0",
+	"name": "Zipline",
+	"description": "Baritone teleport pathfinding using movement packets",
+	"authors": [
+		"Claude"
+	],
+	"contact": {
+		"homepage": "https://example.com",
+		"sources": "https://github.com/example/zipline"
+	},
+	"license": "MIT",
+	"icon": "assets/zipline/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.claude.Zipline"
+		]
+	},
+	"mixins": [
+		"zipline.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"fabric": "*",
+		"minecraft": "~1.21",
+		"java": ">=17",
+		"baritone": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
